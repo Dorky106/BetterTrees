@@ -35,7 +35,7 @@ namespace BrightExistence.SimpleTools
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterStartup, NAMESPACE + ".AfterStartup")]
         public static void AfterStartup()
         {
-            PhentrixGames.NewColonyAPI.Managers.VersionManager.runVersionCheck("BetterTrees", new Version(Variables.toolkitVersion), "https://raw.githubusercontent.com/Dorky106/NewColonyAPI/master/NewColonyAPI.md");
+            PhentrixGames.NewColonyAPI.Managers.VersionManager.runVersionCheck("BetterTrees", new Version(Variables.toolkitVersion), "https://raw.githubusercontent.com/Dorky106/BetterTrees/master/Version.md");
         }
 
         /// <summary>
