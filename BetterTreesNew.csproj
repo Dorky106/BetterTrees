@@ -1,0 +1,161 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{536A62B2-3638-43D2-872C-70E09BAF8A61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>BetterTrees</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BetterTreesNew</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APIProvider">
+      <HintPath>..\ColonySurvival\NewColonyAPI\libs\APIProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\ColonySurvival\NewColonyAPI\libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NewColonyAPI">
+      <HintPath>..\ColonySurvival\NewColonyAPI\NewColonyAPI\bin\Debug\NewColonyAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\index" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\02\5a06d62b656f69bcf967d8018efdf3ca187a2b" />
+    <None Include=".git\objects\0c\14c9c08ab78146101246d587628a1ae06700f0" />
+    <None Include=".git\objects\13\d47141da0017381e4aee35f2180aa4b2b234a4" />
+    <None Include=".git\objects\17\5994234907c239c92a67bf87de1321165548b2" />
+    <None Include=".git\objects\19\cfa88846f8ee563a54fa1d144b20b18babe4c4" />
+    <None Include=".git\objects\1b\b3f3feb47934e23512c2be31fe3834453a6a8d" />
+    <None Include=".git\objects\1c\94fac13cff8405dbe8cebbe5678c7bc854b2c4" />
+    <None Include=".git\objects\1e\c7168af746458fc00115c6ce45365454834767" />
+    <None Include=".git\objects\22\fbb36e2d87d155f2dedb8e49582c98820ef348" />
+    <None Include=".git\objects\23\cbe284b1547c350b556d83ee2b5a6ba98210a7" />
+    <None Include=".git\objects\2c\c5d32166a5fa549a228119c80ce9b8449fe66f" />
+    <None Include=".git\objects\34\96170e3c0f52987f8a1161d29c110aedc2d4d4" />
+    <None Include=".git\objects\36\dcfc200a591819308df803293578313019fdee" />
+    <None Include=".git\objects\3e\ef2ad7e8d3b29e40fe0d9789b727e0622c3df4" />
+    <None Include=".git\objects\3f\82cf348f770570e315de9d0bd688d40e14b35a" />
+    <None Include=".git\objects\45\33165a666a95cfd44c7fec5fc21d7dbefc4ae9" />
+    <None Include=".git\objects\49\ec4a6338a56e562959a5425f4ceb1868321315" />
+    <None Include=".git\objects\50\60530bc65bf04f950ba96ddc97263611119b96" />
+    <None Include=".git\objects\52\41d9cab7cf9486eb129c04b5525cb276f55520" />
+    <None Include=".git\objects\53\cd39d1226028e2fec4621432d3a1b9eae92e7d" />
+    <None Include=".git\objects\53\f03db1c1b7287f2f96f9b2bb4598ac29a67968" />
+    <None Include=".git\objects\55\f8dbd64d9d4a690481f15bfc11ed7958aa8edd" />
+    <None Include=".git\objects\5e\93a6cd60114b4927a4a126d56658ca15c98696" />
+    <None Include=".git\objects\5f\196b84fdd44370cd1a3be77327b46e19d94e0e" />
+    <None Include=".git\objects\62\a97041942ef4175728d4e8dd21cf659cb7392b" />
+    <None Include=".git\objects\6f\22b344f7a05a8e7135979697233e6f871ee5eb" />
+    <None Include=".git\objects\6f\cc029f9470260f26cb5079c048870664bc15e8" />
+    <None Include=".git\objects\76\8907ff24da1b7dfacf4287cc3d249b94da3350" />
+    <None Include=".git\objects\76\b48c5e2bd4b09f4e64fde2ead1064f1db8eafe" />
+    <None Include=".git\objects\78\488dcf1e091e51cbf7df536bde0f3378f5d3b8" />
+    <None Include=".git\objects\7e\d1ecab3868e480185972f301edc84a4a06a0c0" />
+    <None Include=".git\objects\82\3dea2c58634431c4d069a3300997e2f79454d3" />
+    <None Include=".git\objects\87\ede6d109f4f0a97886e197e2d140833d49fda2" />
+    <None Include=".git\objects\8c\76a18022229ebdc3b14cc8d6e9d1b5ba1e765f" />
+    <None Include=".git\objects\8d\11802826cc3a3b4633a5d0be7e20f81e0c0d86" />
+    <None Include=".git\objects\a6\5bb97686cf241846fb539b5e8874a54854a1bc" />
+    <None Include=".git\objects\ac\42d09101eceb41cc2dce340ea03a41ae3389f7" />
+    <None Include=".git\objects\b2\d3f60cc070794e27ee3395ea3e410b80eb3f93" />
+    <None Include=".git\objects\b6\2a42f6d5e4e4b8eb50eb48fc8283714862bd16" />
+    <None Include=".git\objects\c8\607fc1e8bcc5d6d9177525c9fd8cf81e78cd33" />
+    <None Include=".git\objects\cd\f70d602962df026aa401ec3bb2487b051bc48d" />
+    <None Include=".git\objects\d0\c3dbf747311a8cf533db09e8390e9201e6cb4e" />
+    <None Include=".git\objects\de\2b2889eb9707038b20e005a66e43feaff801ba" />
+    <None Include=".git\objects\df\55398df4eff404143cbbb53f148c95e48ca5e8" />
+    <None Include=".git\objects\e2\cb0ed617fc70174c59a779458e1ea625be7d36" />
+    <None Include=".git\objects\e2\debfb81ed57e8965a39c276d753c9bf9602444" />
+    <None Include=".git\objects\e4\a2ed8a6ba4bd056f9ef6dc02cda7d76dd02fcd" />
+    <None Include=".git\objects\e6\60fd93d3196215552065b1e63bf6a2f393ed86" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\ee\4803f2d8b723d48491921e42fe7316ab8b518c" />
+    <None Include=".git\objects\f3\e743f8e5b79531dc2c910afd71ef1564787c83" />
+    <None Include=".git\objects\f4\778493c50025c6ab147a1fec7486ef0c706792" />
+    <None Include=".git\objects\f4\e7932f035629c1b4a5594853e6452320763a55" />
+    <None Include=".git\objects\f9\2d447447a062fa10eacb415748c440dc81b6e3" />
+    <None Include=".git\objects\f9\f25455bdaa82554b54058e5e6407c7a9ea3f16" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".git\sourcetreeconfig" />
+    <None Include="localization\en-US\translation.json" />
+    <None Include="modInfo.json" />
+    <None Include="README.md" />
+    <None Include="Version.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="ItemHelper.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeHelper.cs" />
+    <Compile Include="ResearchHelper.cs" />
+    <Compile Include="TextureHelper.cs" />
+    <Compile Include="Variables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\firTree.png" />
+    <Content Include="icons\leavestemperate.png" />
+    <Content Include="icons\loghorizontaltaiga.png" />
+    <Content Include="icons\loghorizontaltemperate.png" />
+    <Content Include="icons\logTaiga.png" />
+    <Content Include="icons\logtemperate.png" />
+    <Content Include="textures\albedo\firTree.png" />
+    <Content Include="textures\albedo\leavestemperate.png" />
+    <Content Include="textures\albedo\loghorizontaltaiga.png" />
+    <Content Include="textures\albedo\loghorizontaltemperate.png" />
+    <Content Include="textures\albedo\logTaiga.png" />
+    <Content Include="textures\albedo\logTemperate.png" />
+    <Content Include="textures\albedo\stumptaiga.png" />
+    <Content Include="textures\albedo\stumptemperate.png" />
+    <Content Include="textures\albedo\x+.png" />
+    <Content Include="textures\albedo\x-.png" />
+    <Content Include="textures\albedo\z+.png" />
+    <Content Include="textures\albedo\z-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
