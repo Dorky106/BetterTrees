@@ -34,7 +34,7 @@ namespace BrightExistence.SimpleTools
     public static class Data
     {
         //----------------- CONSTANTS ------------------
-        public const string NAMESPACE = "BrightExistence.BetterTrees";
+        public const string NAMESPACE = "JackPS9.BetterTrees";
 
         // ----------------- DATA MEMBERS ------------------
         // Declare mod assets like Items and Recipies below (as static) if you need them to reference each other later on.

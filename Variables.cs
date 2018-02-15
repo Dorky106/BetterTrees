@@ -7,16 +7,6 @@ namespace BrightExistence.SimpleTools
     {
         public static string ModGamedataDirectory;
         public static Dictionary<string, ItemTypesServer.ItemTypeRaw> itemsMaster;
-        protected const int simpleToolsMajor = 0;
-        protected const int simpleToolsMinor = 2;
-        protected const int simpleToolsBuild = 2;
-        public static string toolkitVersion
-        {
-            get
-            {
-                return Convert.ToString(simpleToolsMajor) + "." + Convert.ToString(simpleToolsMinor) + "." + Convert.ToString(simpleToolsBuild);
-            }
-        }
 
         // AUTO-REGISTERED TEXTURES
         public static List<SpecificTexture> SpecificTextures = new List<SpecificTexture>();

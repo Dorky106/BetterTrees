@@ -14,6 +14,7 @@ namespace BrightExistence.SimpleTools
 
         public static string ModGamedataDirectory;
         public static string LocalizationFolder;
+        public static Version ModVersion = new Version(1, 0, 0, 1);
         /// <summary>
         /// OnAssemblyLoaded callback entrypoint. Used for mod configuration / setup.
         /// </summary>
@@ -25,7 +26,7 @@ namespace BrightExistence.SimpleTools
             LocalizationFolder = Path.Combine(ModGamedataDirectory, "localization/").Replace("\\", "/");
             // Announce ourselves.
             Pipliz.Log.Write("{0} loading.", NAMESPACE);
-            Pipliz.Log.Write("Built using SimpleTools version {0}", Variables.toolkitVersion);
+            Pipliz.Log.Write("Built using SimpleTools version {0}", ModVersion.ToString());
             Pipliz.Log.Write("Thanks and credit to Pandaros for the localization routines.");
 
             // Get a properly formatted version of our mod directory.
@@ -35,7 +36,7 @@ namespace BrightExistence.SimpleTools
         [ModLoader.ModCallback(ModLoader.EModCallbackType.AfterStartup, NAMESPACE + ".AfterStartup")]
         public static void AfterStartup()
         {
-            PhentrixGames.NewColonyAPI.Managers.VersionManager.runVersionCheck("BetterTrees", new Version(Variables.toolkitVersion), "https://raw.githubusercontent.com/Dorky106/BetterTrees/master/Version.md");
+            PhentrixGames.NewColonyAPI.Managers.VersionManager.runVersionCheck("BetterTrees", ModVersion, "https://raw.githubusercontent.com/Dorky106/BetterTrees/master/Version.md");
         }
 
         /// <summary>
