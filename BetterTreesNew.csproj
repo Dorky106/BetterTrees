@@ -114,12 +114,13 @@
     <None Include=".git\refs\heads\master" />
     <None Include=".git\refs\remotes\origin\master" />
     <None Include=".git\sourcetreeconfig" />
-    <None Include="localization\en-US\translation.json" />
     <None Include="modInfo.json" />
     <None Include="README.md" />
     <None Include="Version.md" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blocks\logtemperatehorizontal.cs" />
+    <Compile Include="Blocks\logtaigahorizontal.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="ItemHelper.cs" />
     <Compile Include="main.cs" />
@@ -127,27 +128,10 @@
     <Compile Include="RecipeHelper.cs" />
     <Compile Include="ResearchHelper.cs" />
     <Compile Include="TextureHelper.cs" />
+    <Compile Include="Textures\BlockSides.cs" />
+    <Compile Include="Textures\Leaves.cs" />
+    <Compile Include="Textures\Logs.cs" />
     <Compile Include="Variables.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="icons\firTree.png" />
-    <Content Include="icons\leavestemperate.png" />
-    <Content Include="icons\loghorizontaltaiga.png" />
-    <Content Include="icons\loghorizontaltemperate.png" />
-    <Content Include="icons\logTaiga.png" />
-    <Content Include="icons\logtemperate.png" />
-    <Content Include="textures\albedo\firTree.png" />
-    <Content Include="textures\albedo\leavestemperate.png" />
-    <Content Include="textures\albedo\loghorizontaltaiga.png" />
-    <Content Include="textures\albedo\loghorizontaltemperate.png" />
-    <Content Include="textures\albedo\logTaiga.png" />
-    <Content Include="textures\albedo\logTemperate.png" />
-    <Content Include="textures\albedo\stumptaiga.png" />
-    <Content Include="textures\albedo\stumptemperate.png" />
-    <Content Include="textures\albedo\x+.png" />
-    <Content Include="textures\albedo\x-.png" />
-    <Content Include="textures\albedo\z+.png" />
-    <Content Include="textures\albedo\z-.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\objects\info\" />

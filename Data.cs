@@ -42,10 +42,6 @@ namespace BrightExistence.SimpleTools
         // -------------------------------------------------
 
         // (STATIC) SIMPLETEXTURE OBJECTS
-        public static SpecificTexture XM = new SpecificTexture("XM", NAMESPACE);
-        public static SpecificTexture XP = new SpecificTexture("XP", NAMESPACE);
-        public static SpecificTexture ZM = new SpecificTexture("ZM", NAMESPACE);
-        public static SpecificTexture ZP = new SpecificTexture("ZP", NAMESPACE);
         static SpecificTexture TexFir = new SpecificTexture("leavestaiga", NAMESPACE);
         static SpecificTexture TexLeaves = new SpecificTexture("leavestemperate", NAMESPACE);
         static SpecificTexture TexLogTaiga = new SpecificTexture("logtaiga", NAMESPACE);
@@ -83,10 +79,6 @@ namespace BrightExistence.SimpleTools
         /// </summary>
         public static void populateTextureObjects()
         {
-            XM.AlbedoPath = UtilityFunctions.albedoPath("x-.png");
-            XP.AlbedoPath = UtilityFunctions.albedoPath("x+.png");
-            ZM.AlbedoPath = UtilityFunctions.albedoPath("z-.png");
-            ZP.AlbedoPath = UtilityFunctions.albedoPath("z+.png");
             TexFir.AlbedoPath = UtilityFunctions.albedoPath("firTree.png");
             TexLeaves.AlbedoPath = UtilityFunctions.albedoPath("leavestemperate.png");
             TexLogTaiga.AlbedoPath = UtilityFunctions.albedoPath("logTaiga.png");
