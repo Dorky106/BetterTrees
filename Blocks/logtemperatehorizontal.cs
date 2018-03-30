@@ -9,8 +9,10 @@ namespace PhentrixGames.Blocks
     public class logtemperate : NewColonyAPI.Classes.Type, NewColonyAPI.Interfaces.IAutoType
     {
         public logtemperate() : base("logtemperate", true)
-        {
-            this.SideYMinus = "logtemperatstump";
+		{
+			this.ParentType = "log";
+
+			this.SideYMinus = "logtemperatstump";
             this.SideYPlus = "logtemperatstump";
 
             this.SideXMinus = "logtemperate";
@@ -21,7 +23,8 @@ namespace PhentrixGames.Blocks
             this.IsPlaceable = true;
 
             this.Icon = NewColonyAPI.Helpers.Utilities.MultiCombine(BetterTrees.Main.ModIconsDirectory, "logtemperate.png");
-        }
+			this.Categories = new List<string> { "essential", "decorative" };
+		}
         public override List<BaseRecipe> AddRecipes()
         {
             List<BaseRecipe> ret = new List<BaseRecipe>();
@@ -38,8 +41,9 @@ namespace PhentrixGames.Blocks
     {
 
         public logtemperatehorizonal() : base("logtemperatehorizonal", true)
-        {
-            this.RotatableXMinus = "logtemperatehorizontalXM";
+		{
+
+			this.RotatableXMinus = "logtemperatehorizontalXM";
             this.RotatableXPlus = "logtemperatehorizontalXP";
             this.RotatableZMinus = "logtemperatehorizontalZM";
             this.RotatableZPlus = "logtemperatehorizontalZP";

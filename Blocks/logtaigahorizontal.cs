@@ -10,6 +10,8 @@ namespace PhentrixGames.Blocks
     {
         public logtaiga() : base("logtaiga", true)
         {
+			this.ParentType = "log";
+
             this.SideYMinus = "logtaigastump";
             this.SideYPlus = "logtaigastump";
 
@@ -21,7 +23,8 @@ namespace PhentrixGames.Blocks
             this.IsPlaceable = true;
 
             this.Icon = NewColonyAPI.Helpers.Utilities.MultiCombine(BetterTrees.Main.ModIconsDirectory, "logTaiga.png");
-        }
+			this.Categories = new List<string> { "essential", "decorative" };
+		}
         public override List<BaseRecipe> AddRecipes()
         {
             List<BaseRecipe> ret = new List<BaseRecipe>();

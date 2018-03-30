@@ -21,7 +21,7 @@ namespace PhentrixGames.BetterTrees
         public static string ModTextureDirectory = @"gamedata/mods/JackPS9/BetterTrees/gamedata/Textures";
         public static string ModMaterialsDirectory = @"gamedata/mods/JackPS9/BetterTrees/gamedata/Textures/Materials";
         public static string ModIconsDirectory = @"gamedata/mods/JackPS9/BetterTrees/gamedata/Textures/Icons";
-        public static Version ModVersion = new Version(1, 0, 1, 1);
+        public static Version ModVersion = new Version(1, 0, 1, 2);
         /// <summary>
         /// OnAssemblyLoaded callback entrypoint. Used for mod configuration / setup.
         /// </summary>
